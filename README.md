@@ -34,15 +34,21 @@ C2S/
    pip install --upgrade pip
    pip install -r requirements.txt
    ```
-4. **Popule o banco de dados**
+4. **Configure a chave da OpenAI**
+   - Crie um arquivo `.env` na raiz do projeto com o conteúdo:
+     ```
+     OPENAI_API_KEY=sua-chave-aqui
+     ```
+   - O arquivo `.env` já está no `.gitignore` e não será versionado.
+5. **Popule o banco de dados**
    ```bash
    python3 db/populate.py
    ```
-5. **Inicie o servidor FastAPI**
+6. **Inicie o servidor FastAPI**
    ```bash
    uvicorn server.server:app --reload
    ```
-6. **Rode o agente virtual no terminal**
+7. **Rode o agente virtual no terminal**
    ```bash
    python3 client/client.py
    ```
@@ -60,7 +66,6 @@ Para rodar os testes:
 pytest tests/test_api.py
 ```
 Os testes cobrem busca geral e busca com filtro simples, por marca e categoria.
-
 
 ## Decisões Técnicas
 
