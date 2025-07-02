@@ -39,7 +39,6 @@ C2S/
      ```
      OPENAI_API_KEY=sua-chave-aqui
      ```
-   - O arquivo `.env` já está no `.gitignore` e não será versionado.
 5. **Popule o banco de dados**
    ```bash
    python3 db/populate.py
