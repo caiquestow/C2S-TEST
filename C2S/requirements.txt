@@ -1,0 +1,6 @@
+sqlalchemy
+faker
+pytest
+fastapi
+uvicorn
+requests 
