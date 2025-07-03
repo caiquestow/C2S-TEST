@@ -4,4 +4,5 @@ pytest
 fastapi
 uvicorn
 requests
-openai 
+openai
+python-dotenv 
